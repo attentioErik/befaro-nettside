@@ -15,23 +15,15 @@ export default function ContactForm() {
     setError("");
 
     const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      message: formData.get("message"),
-    };
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("https://usebasin.com/f/a50c2771e19b", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: formData,
       });
 
       if (!res.ok) {
-        const json = await res.json();
-        throw new Error(json.error || "Noe gikk galt.");
+        throw new Error("Noe gikk galt.");
       }
 
       setSubmitted(true);
@@ -80,7 +72,7 @@ export default function ContactForm() {
                 <Send className="h-5 w-5 text-white" />
               </div>
               <h3 className="mt-4 text-xl font-semibold text-foreground">
-                Takk for meldingen!
+                Takk for henvendelsen!
               </h3>
               <p className="mt-2 text-muted-foreground">
                 Vi tar kontakt med deg så snart som mulig.

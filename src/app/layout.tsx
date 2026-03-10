@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   description:
     "Skriv profesjonelle takstrapporter på minutter. Slutt å knote med Word-maler. Prøv gratis.",
   keywords: ["takstrapport", "takstmann", "boligtaksering", "NS 3600", "AI", "Befaro"],
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "Befaro – Spar timer på rapportskriving",
     description: "AI-drevet rapportverktøy bygget for norske takstmenn.",

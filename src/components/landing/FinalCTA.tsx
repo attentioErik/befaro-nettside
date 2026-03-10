@@ -31,10 +31,10 @@ export default function FinalCTA() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <a
-            href="#"
+            href="#contact"
             className="mt-8 inline-flex h-14 items-center justify-center rounded-lg bg-white px-10 text-base font-semibold text-primary shadow-lg transition-all hover:bg-blue-50 hover:shadow-xl"
           >
-            Start gratis prøveperiode
+            Ta kontakt
           </a>
         </motion.div>
       </div>

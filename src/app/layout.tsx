@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Befaro – AI-drevet rapportverktøy for takstmenn",
   description:
-    "Skriv profesjonelle takstrapporter på minutter. Slutt å knote med Word-maler. Prøv gratis.",
+    "Skriv profesjonelle takstrapporter på minutter med Befaro. Slutt å knote med Word-maler.",
   keywords: ["takstrapport", "takstmann", "boligtaksering", "NS 3600", "AI", "Befaro"],
   icons: {
     icon: "/favicon.svg",

@@ -45,12 +45,8 @@ export default function Pricing() {
           </div>
           <div className="p-8">
             <div className="text-center">
-              <p className="text-sm text-muted-foreground">Etablering</p>
-              <p className="text-2xl font-bold text-foreground">10 000,-</p>
-              <div className="my-4 h-px bg-gray-200" />
-              <p className="text-sm text-muted-foreground">Deretter</p>
               <p className="text-4xl font-bold text-foreground">
-                kr 990,-
+                kr 4 000,-
                 <span className="text-lg font-normal text-muted-foreground">
                   /mnd
                 </span>
@@ -67,13 +63,26 @@ export default function Pricing() {
             </ul>
 
             <a
-              href="#"
+              href="#contact"
               className="mt-8 block w-full rounded-lg bg-primary py-3 text-center text-base font-semibold text-primary-foreground shadow transition-all hover:bg-blue-700 hover:shadow-lg"
             >
-              Start gratis prøveperiode
+              Kom i gang
             </a>
           </div>
         </motion.div>
+
+        <motion.p
+          className="mt-6 text-center text-sm text-muted-foreground"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          Større aktør? Vi tilpasser tilbud etter behov.{" "}
+          <a href="#contact" className="font-medium text-primary hover:underline">
+            Ta kontakt
+          </a>
+        </motion.p>
       </div>
     </section>
   );

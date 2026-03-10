@@ -54,7 +54,7 @@ export default function Hero() {
             href="#pricing"
             className="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-base font-semibold text-primary-foreground shadow-lg transition-all hover:bg-blue-700 hover:shadow-xl"
           >
-            Prøv gratis
+            Kom i gang
           </a>
           <a
             href="#demo"

@@ -36,7 +36,7 @@ export default function Navbar() {
             href="#pricing"
             className="inline-flex h-10 items-center justify-center rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground shadow transition-all hover:bg-blue-700 hover:shadow-lg"
           >
-            Prøv gratis
+            Kom i gang
           </a>
         </div>
 
@@ -78,7 +78,7 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="inline-flex h-10 items-center justify-center rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground shadow transition-all hover:bg-blue-700"
               >
-                Prøv gratis
+                Kom i gang
               </a>
             </div>
           </motion.div>

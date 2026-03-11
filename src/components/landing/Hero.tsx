@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { FileText, Play } from "lucide-react";
 import AppScreenshot from "./AppScreenshot";
+import MobileAppScreenshot from "./MobileAppScreenshot";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -72,7 +73,14 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.4 }}
       >
-        <AppScreenshot />
+        {/* Mobile: phone mockup */}
+        <div className="block md:hidden">
+          <MobileAppScreenshot />
+        </div>
+        {/* Desktop: browser mockup */}
+        <div className="hidden md:block">
+          <AppScreenshot />
+        </div>
       </motion.div>
     </section>
   );
